@@ -1,0 +1,19 @@
+body {
+    font-family: 'Zen Maru Gothic', sans-serif;
+}
+
+.font-monospace {
+    font-family: monospace,monospace !important;
+    font-size: .8rem !important;
+}
+
+.bezier-animated {
+  transform: scale(0.94);
+  animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+}
+
+@keyframes scale {
+  100% {
+    transform: scale(1);
+  }
+}

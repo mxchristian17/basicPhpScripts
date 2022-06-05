@@ -22,3 +22,9 @@ Route::get('/merge_sort', 'FunctionsController@mergeSortPage')->name('mergeSortP
 Route::post('/mergesortpost', 'FunctionsController@mergeSortPost')->name('mergeSortPost');
 Route::get('/quick_sort', 'FunctionsController@quickSortPage')->name('quickSortPage');
 Route::post('/quicksortpost', 'FunctionsController@quickSortPost')->name('quickSortPost');
+Route::get('/bucket_sort', 'FunctionsController@bucketSortPage')->name('bucketSortPage');
+Route::post('/bucketsortpost', 'FunctionsController@bucketSortPost')->name('bucketSortPost');
+Route::get('/heap_sort', 'FunctionsController@heapSortPage')->name('heapSortPage');
+Route::post('/heapsortpost', 'FunctionsController@heapSortPost')->name('heapSortPost');
+Route::get('/counting_sort', 'FunctionsController@countingSortPage')->name('countingSortPage');
+Route::post('/countingsortpost', 'FunctionsController@countingSortPost')->name('countingSortPost');

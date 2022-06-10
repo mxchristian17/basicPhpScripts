@@ -12,6 +12,10 @@
                 <div class="form-text">Separados por coma</div>
             </div>
             <div class="mb-3">
+                <label for="search_value" class="form-label">Valor de busqueda</label>
+                <input class="form-control" id="search_value" name="search_value" type="text" />
+            </div>
+            <div class="mb-3">
                 <label for="test_type" class="form-label">Tipo de valores a ensayar</label>
                 <select class="form-control" id="test_type" name="test_type">
                     <option value="text">Texto</option>
@@ -51,6 +55,7 @@
         let varList = [];
         let testType = 'numeric';
         let testQty = 0;
+        let searchValue = 0;
         $(document).ready(() => {
             $('#resultLoading').hide();
             $('#test_btn').show();
@@ -66,6 +71,7 @@
             varList = values;
             testType = $("#test_type")[0].value;
             testQty = $("#test_qty")[0].value;
+            searchValue = $("#search_value")[0].value;
         }
 
         const submitForm = (test = 0) => {
@@ -85,7 +91,7 @@
             showLoader();
             scrollToResult();
             
-            $.post( "{{ $formAction }}", {_token: $("meta[name='csrf-token']").attr("content"), varList: varList, test: test, testType: testType, testQty: testQty }, function(data) {  
+            $.post( "{{ $formAction }}", {_token: $("meta[name='csrf-token']").attr("content"), varList: varList, test: test, testType: testType, testQty: testQty, searchValue: searchValue }, function(data) {  
 
                 let result = JSON.parse(data);
                 let executionTime = Math.round(parseFloat(result[2])*1000)/1000

@@ -28,7 +28,7 @@
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Sort</a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="/merge_sort">Merge Sort</a></li>
+                                <li><a class="dropdown-item" href="merge_sort">Merge Sort</a></li>
                                 <li><a class="dropdown-item" href="quick_sort">Quick Sort</a></li>
                                 <li><a class="dropdown-item" href="bucket_sort">Bucket Sort</a></li>
                                 <li><a class="dropdown-item" href="heap_sort">Heap Sort</a></li>
@@ -38,7 +38,7 @@
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Search</a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#">Binary Search</a></li>
+                                <li><a class="dropdown-item" href="binary_search">Binary Search</a></li>
                                 <li><a class="dropdown-item" href="#">Quick Sort</a></li>
                                 <li><a class="dropdown-item" href="#">Bucket Sort</a></li>
                                 <li><a class="dropdown-item" href="#">Heap Sort</a></li>
